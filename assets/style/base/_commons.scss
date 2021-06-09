@@ -1,0 +1,125 @@
+/* text color  */
+@import '../function/function';
+
+.primary-color {
+	color: $primary-color;
+}
+.text-black {
+	color:$black;
+}
+.text-white {
+	color: $white;
+}
+
+
+/* background color */
+.bg-black {
+	background-color: $black;
+}
+.bg-white {
+	background-color: $white;
+}
+.bg-primary-color {
+	background-color: $primary-color;
+}
+.border-primary-color {
+	border-color: $primary-color !important;
+}
+/* font size */
+.font-size-big {
+	font-size: $fontSizeBig;
+}
+.shadow {
+	-webkit-box-shadow: 9px 10px 24px -11px rgba(156,156,156,1);
+	-moz-box-shadow: 9px 10px 24px -11px rgba(156,156,156,1);
+	box-shadow: 9px 10px 24px -11px rgba(156,156,156,1);
+}
+/* button */
+
+/* link */
+.a-tag-reset {
+	
+}
+.center-hr-element
+{
+	position: relative;
+	._content 
+	{
+		padding-right: rem(15);
+		background: white;
+		font-weight: 500;
+	}
+	&::before
+	{
+		top: 50%;
+		left: 0;
+		z-index: -1;
+		border-bottom: 2px solid #EBEBEB;
+		position: absolute;
+		width: 100%;
+		content: '';
+	}
+	/* modifier */
+	&.my-pagination
+	{
+		._pagination
+		{
+			padding: 0 rem(25);
+		}
+		a
+		{
+			padding: rem(8) rem(14);
+			background: white;
+			color: #D2D2D2;
+			border: 1px solid;
+			text-decoration: none;
+			&:not(:last-child)
+			{
+				margin-right: rem(4);
+			}
+			&.active
+			{
+				color: white;
+				background: $primary-color;
+			}
+		}
+	}
+}
+/* form */
+.outline-width-0:focus
+{
+	outline-width: 0;
+}
+/* endform */
+#overlay
+{
+	width: 100%;
+	height: 100vh;
+	transform: translateX(100%);
+	background-color: transparent;	
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	transition: 1s all ease;
+	&.--no-animation
+	{
+		&.active
+		{
+			transform: translateX(0);
+			background-color: rgba(0,0,0,.4);
+			visibility: visible;
+			opacity: 1;
+			transition: none;
+			}
+	}
+	&.active
+	{
+		transform: translateX(0);
+		background-color: rgba(0,0,0,.4);
+		visibility: visible;
+		opacity: 1;
+	}
+}

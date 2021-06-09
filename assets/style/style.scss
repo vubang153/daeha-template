@@ -1,0 +1,175 @@
+@import 'base/variable';
+@import 'components/components';
+@import 'function/function';
+.main-logo 
+{
+	&__wrapper
+	{
+		width: 20%;
+	}
+	._img 
+	{
+		height: 100px;
+		object-fit: cover;
+	}
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 1;
+	-webkit-box-shadow: -1px 4px 10px 0px rgba(176,176,176,1);
+	-moz-box-shadow: -1px 4px 10px 0px rgba(176,176,176,1);
+	box-shadow: -1px 4px 10px 0px rgba(176,176,176,1);
+}
+.search-form 
+{
+	._inner {
+		width: 100%;
+		max-width: 500px;
+	}
+	._keyword {
+		border-color: #ebebeb !important;
+		padding: rem(8) rem(10);
+		border: 1px solid;
+	}
+	._btn-submit {
+		border: 1px solid;
+	}
+}
+.menu
+{
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		ul
+		{
+			display: none;
+			ul
+			{
+				a
+				{
+					margin-left: rem(40);
+				}
+			}
+			&.active
+			{
+				display: block;
+			}
+			a
+			{
+				font-weight: normal;
+				margin-left: rem(30);
+				padding-left: 0;
+				padding-right: 0;
+				background: transparent;
+				border-bottom: 1px dashed #ebebeb;
+				color: #484954;
+			}
+		}
+	}
+	li {
+		position: relative;
+		a {
+			text-decoration: none;
+			padding: rem(10) rem(20);
+			color: #212121;
+			display: block;
+			background: #F9F9F9;
+			font-weight: 500;
+		}
+		._show
+		{
+			position: absolute;
+			top: 3px;
+			display: inline-block;
+			width: 20px;
+			right: 5px;
+			cursor: pointer;
+			color: #C4C4C4;
+		}
+	}
+}
+.menu, .order-by, .order-by-year
+{
+	._title
+	{
+		padding: 1rem;
+	}
+}
+.contact
+{
+	&__header
+	{
+		width: 50%
+	}
+	&__icon
+	{
+		font-size: 2rem;
+	}
+}
+.navigation {
+	min-height: 100px;
+	position: relative;
+}
+.social-contact {
+	background: rgba(221,0,3,.1);
+	padding: rem(6) rem(11);
+	&:not(:first-child) {
+		margin-left: rem(15);
+	}
+	&__icon
+	{
+		font-size: 1.5rem;
+	}
+}
+.slider
+{
+	.carousel-inner
+	{
+		max-height: 370px;
+	}
+	.carousel-indicators [data-bs-target].--custom
+	{
+		background-color: $primary-color;
+		height: 5px;
+	}
+}
+
+.contact-form {
+	background-color: #F9F9F9;
+	.contact-form
+	{
+		._submit
+		{
+			background-color: $primary-color;
+		}
+	}
+}
+.footer
+{
+	.company-info
+	{
+		padding: rem(0) rem(35) rem(40) rem(35);
+		width: 73%;
+		._logo
+		{
+
+		}
+		._about
+		{
+			._company-registration
+			{
+				white-space: normal;
+				line-height: 2;
+			}
+		}
+	}
+	&__contact
+	{
+		&__icon
+		{
+		}
+	}
+}
+
+

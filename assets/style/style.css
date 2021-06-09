@@ -1,0 +1,99 @@
+.main-logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  -webkit-box-shadow: -1px 4px 10px 0px #b0b0b0;
+  -moz-box-shadow: -1px 4px 10px 0px #b0b0b0;
+  box-shadow: -1px 4px 10px 0px #b0b0b0; }
+  .main-logo__wrapper {
+    width: 20%; }
+  .main-logo ._img {
+    height: 100px;
+    object-fit: cover; }
+
+.search-form ._inner {
+  width: 100%;
+  max-width: 500px; }
+.search-form ._keyword {
+  border-color: #ebebeb !important;
+  padding: 0.5714285714rem 0.7142857143rem;
+  border: 1px solid; }
+.search-form ._btn-submit {
+  border: 1px solid; }
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .menu ul ul {
+    display: none; }
+    .menu ul ul ul a {
+      margin-left: 2.8571428571rem; }
+    .menu ul ul.active {
+      display: block; }
+    .menu ul ul a {
+      font-weight: normal;
+      margin-left: 2.1428571429rem;
+      padding-left: 0;
+      padding-right: 0;
+      background: transparent;
+      border-bottom: 1px dashed #ebebeb;
+      color: #484954; }
+.menu li {
+  position: relative; }
+  .menu li a {
+    text-decoration: none;
+    padding: 0.7142857143rem 1.4285714286rem;
+    color: #212121;
+    display: block;
+    background: #F9F9F9;
+    font-weight: 500; }
+  .menu li ._show {
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    right: 5px;
+    cursor: pointer;
+    color: #C4C4C4; }
+
+.menu ._title, .order-by ._title, .order-by-year ._title {
+  padding: 1rem; }
+
+.contact__header {
+  width: 50%; }
+.contact__icon {
+  font-size: 2rem; }
+
+.navigation {
+  min-height: 100px;
+  position: relative; }
+
+.social-contact {
+  background: rgba(221, 0, 3, 0.1);
+  padding: 0.4285714286rem 0.7857142857rem; }
+  .social-contact:not(:first-child) {
+    margin-left: 1.0714285714rem; }
+  .social-contact__icon {
+    font-size: 1.5rem; }
+
+.slider .carousel-inner {
+  max-height: 370px; }
+.slider .carousel-indicators [data-bs-target].--custom {
+  background-color: #DD0003;
+  height: 5px; }
+
+.contact-form {
+  background-color: #F9F9F9; }
+  .contact-form .contact-form ._submit {
+    background-color: #DD0003; }
+
+.footer .company-info {
+  padding: 0rem 2.5rem 2.8571428571rem 2.5rem;
+  width: 73%; }
+  .footer .company-info ._about ._company-registration {
+    white-space: normal;
+    line-height: 2; }
+
+/*# sourceMappingURL=style.css.map */
